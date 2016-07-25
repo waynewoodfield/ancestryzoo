@@ -13,7 +13,7 @@
     <Connector port="8080" maxHttpHeaderSize="8192" maxThreads="150" minSpareThreads="25" maxSpareThreads="75" enableLookups="false" redirectPort="8443" acceptCount="100" connectionTimeout="20000" disableUploadTimeout="true" />
     <Engine name="Catalina" defaultHost="localhost">
       <Host name="localhost" appBase="/git/empty" unpackWARs="false" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
-        <Context path="zoo" docBase="/git/ancestry/ancestryzoo" allowLinking="true">
+        <Context path="/zoo" docBase="/git/ancestry/ancestryzoo/web" allowLinking="true">
 					<ResourceLink name="jdbc/zoo" global="zoo" type="javax.sql.DataSource"/>
 				</Context>
       </Host>

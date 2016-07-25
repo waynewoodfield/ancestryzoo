@@ -15,7 +15,7 @@
 
     <action path="/processFeeding" type="action.FeedingAction">
       <set-property property="dispatchMethod" value="process"/>
-      <forward name="success" path="feeding.def"/>
+      <forward name="success" path="/feeding.do?success=true" redirect="true" />
     </action>
 
     <action path="/feedingByDayAnimal" type="action.ReportAction">

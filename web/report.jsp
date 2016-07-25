@@ -12,8 +12,8 @@
   </tr>
   <% while (rs.next()) { %>
   <tr>
-    <% for (int i = 1; i < rsMeta.getColumnCount(); i++) { %>
-    <td><%=rs.getString(i)%></td>
+    <% for (int i = 1; i <= rsMeta.getColumnCount(); i++) { %>
+    <td><%=rs.getObject(i)%></td>
     <% } %>
   </tr>
   <% } %>

@@ -12,7 +12,7 @@
 
   <definition name="feeding.def" extends="main.def">
     <put name="title" value="Enter a feeding" type="string"/>
-    <put name="content" value="feeding.jsp"/>
+    <put name="content" value="/feeding.jsp"/>
   </definition>
 
   <definition name="report.def" extends="main.def">

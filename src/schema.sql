@@ -39,3 +39,22 @@ create table feed_shipment (
   shipment_id integer not null constraint feed_shipment_shipment_id REFERENCES shipment(shipment_id)
 );
 
+insert into zoo (zoo_id, name) values (1, 'San Diego Zoo');
+insert into zoo (zoo_id, name) values (2, 'Hogle Zoo');
+
+insert into species (species_id, name) values (1, 'Panda');
+insert into species (species_id, name) values (2, 'Giraffe');
+insert into species (species_id, name) values (3, 'Penguin');
+
+insert into animal (animal_id, name, species_id, zoo_id) values (1, 'Plumpy', 1, 1);
+insert into animal (animal_id, name, species_id, zoo_id) values (2, 'Velma', 1, 1);
+insert into animal (animal_id, name, species_id, zoo_id) values (3, 'Bamboo', 1, 2);
+insert into animal (animal_id, name, species_id, zoo_id) values (4, 'Shoots', 1, 2);
+insert into animal (animal_id, name, species_id, zoo_id) values (5, 'George', 2, 1);
+insert into animal (animal_id, name, species_id, zoo_id) values (6, 'Spot', 2, 1);
+insert into animal (animal_id, name, species_id, zoo_id) values (7, 'Duke', 2, 2);
+insert into animal (animal_id, name, species_id, zoo_id) values (8, 'Dutchess', 2, 2);
+insert into animal (animal_id, name, species_id, zoo_id) values (9, 'Icy', 3, 1);
+insert into animal (animal_id, name, species_id, zoo_id) values (10, 'Flipper', 3, 1);
+insert into animal (animal_id, name, species_id, zoo_id) values (11, 'Tux', 3, 2);
+insert into animal (animal_id, name, species_id, zoo_id) values (12, 'Tuxette', 3, 2);
