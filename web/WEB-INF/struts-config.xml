@@ -13,6 +13,11 @@
       <forward name="success" path="feeding.def"/>
     </action>
 
+    <action path="/processFeeding" type="action.FeedingAction">
+      <set-property property="dispatchMethod" value="process"/>
+      <forward name="success" path="feeding.def"/>
+    </action>
+
   </action-mappings>
 
   <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>

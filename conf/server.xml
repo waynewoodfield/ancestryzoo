@@ -1,0 +1,22 @@
+<Server port="8005" shutdown="SHUTDOWN">
+
+  <GlobalNamingResources>
+
+		<Resource name="zoo" auth="Container" factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" type="javax.sql.DataSource"
+			maxActive="100" maxIdle="30" maxWait="10000"
+			username="zoo" password="ancestry" driverClassName="org.postgresql.Driver"
+			url="jdbc:postgresql://localhost/zoo" />
+
+  </GlobalNamingResources>
+
+  <Service name="Catalina">
+    <Connector port="8080" maxHttpHeaderSize="8192" maxThreads="150" minSpareThreads="25" maxSpareThreads="75" enableLookups="false" redirectPort="8443" acceptCount="100" connectionTimeout="20000" disableUploadTimeout="true" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost" appBase="/git/empty" unpackWARs="false" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
+        <Context path="zoo" docBase="/git/ancestry/ancestryzoo" allowLinking="true">
+					<ResourceLink name="jdbc/zoo" global="zoo" type="javax.sql.DataSource"/>
+				</Context>
+      </Host>
+    </Engine>
+  </Service>
+</Server>
