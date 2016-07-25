@@ -1,4 +1,5 @@
 out
 work
+dist
 web/WEB-INF/lib
 web/WEB-INF/classes

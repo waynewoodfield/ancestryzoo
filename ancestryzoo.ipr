@@ -15,6 +15,20 @@
         </element>
       </root>
     </artifact>
+    <artifact type="war" name="ancestryzoo:Web">
+      <output-path>$PROJECT_DIR$/dist</output-path>
+      <root id="archive" name="ancestryzoo.war">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="lib" />
+          </element>
+          <element id="directory" name="classes">
+            <element id="module-output" name="ancestryzoo" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="ancestryzoo/web/Web" />
+      </root>
+    </artifact>
   </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
