@@ -18,6 +18,11 @@
       <forward name="success" path="feeding.def"/>
     </action>
 
+    <action path="/feedingByDay" type="action.ReportAction">
+      <set-property property="dispatchMethod" value="feedingByDay"/>
+      <forward name="success" path="report.def"/>
+    </action>
+
   </action-mappings>
 
   <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>

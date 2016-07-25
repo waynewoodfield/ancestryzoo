@@ -56,7 +56,7 @@ public class BaseAction extends DispatchMethodAction
     close(con, ps);
   }
 
-  protected void close(Connection con, PreparedStatement ps)
+  public static void close(Connection con, PreparedStatement ps)
   {
     try
     {

@@ -14,4 +14,13 @@
     <put name="title" value="Enter a feeding" type="string"/>
     <put name="content" value="feeding.jsp"/>
   </definition>
+
+  <definition name="report.def" extends="main.def">
+    <put name="content" value="/report.jsp"/>
+  </definition>
+
+  <definition name="feedingByDay.def" extends="report.def">
+    <put name="title" value="Feedings By Day" type="string"/>
+  </definition>
+
 </tiles-definitions>

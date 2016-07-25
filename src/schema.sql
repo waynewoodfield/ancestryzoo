@@ -21,6 +21,7 @@ create sequence animal_seq start with 1 increment by 1;
 create table feeding (
   feeding_id integer not null constraint feeding_pk PRIMARY KEY,
   animal_id integer not null constraint feeding_animal_fk REFERENCES animal(animal_id),
+  feeding_date date not null,
   feeding_time timestamp not null,
   quantity numeric(10,2) not null
 );
