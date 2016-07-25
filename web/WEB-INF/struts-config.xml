@@ -18,9 +18,19 @@
       <forward name="success" path="feeding.def"/>
     </action>
 
-    <action path="/feedingByDay" type="action.ReportAction">
-      <set-property property="dispatchMethod" value="feedingByDay"/>
-      <forward name="success" path="report.def"/>
+    <action path="/feedingByDayAnimal" type="action.ReportAction">
+      <set-property property="dispatchMethod" value="feedingByDayAnimal"/>
+      <forward name="success" path="feedingByDayAnimal.def"/>
+    </action>
+
+    <action path="/feedingByDaySpecies" type="action.ReportAction">
+      <set-property property="dispatchMethod" value="feedingByDaySpecies"/>
+      <forward name="success" path="feedingByDaySpecies.def"/>
+    </action>
+
+    <action path="/zooPercentOfNormal" type="action.ReportAction">
+      <set-property property="dispatchMethod" value="zooPercentOfNormal"/>
+      <forward name="success" path="zooPercentOfNormal.def"/>
     </action>
 
   </action-mappings>

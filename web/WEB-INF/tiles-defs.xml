@@ -19,8 +19,16 @@
     <put name="content" value="/report.jsp"/>
   </definition>
 
-  <definition name="feedingByDay.def" extends="report.def">
-    <put name="title" value="Feedings By Day" type="string"/>
+  <definition name="feedingByDayAnimal.def" extends="report.def">
+    <put name="title" value="Animal Feedings By Day" type="string"/>
+  </definition>
+
+  <definition name="feedingByDaySpecies.def" extends="report.def">
+    <put name="title" value="Species Feedings By Day" type="string"/>
+  </definition>
+
+  <definition name="zooPercentOfNormal.def" extends="report.def">
+    <put name="title" value="Zoo Percent of Normal" type="string"/>
   </definition>
 
 </tiles-definitions>
